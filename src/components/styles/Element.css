@@ -1,0 +1,37 @@
+.ElementImg  {
+    position: relative;
+    width: 30px;
+    left: 50%;
+    top: 36px;
+    margin-left: -190px;
+}
+
+.theText{
+    position: relative;
+    margin-left: 10px;
+}
+.AnimationElement{
+    animation-name:  ElementAnimation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 0.7s;
+}
+@keyframes ElementAnimation{
+    0%{
+        opacity: 0;
+        left: -5vw;
+    }
+    100%{
+        opacity: 1;
+        left: 0vw;
+    }
+}
+
+#iconcontainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+
+
+}

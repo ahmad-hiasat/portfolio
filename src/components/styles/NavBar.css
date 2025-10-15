@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+.DivNavHide{
+    animation-name: HideDiv  ;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.liLinks{
+    transition: all 0.2s ease;
+
+}
+.links{
+    font-size: 35px;
+}
+.DivNavShow{
+    animation-name: ShowDiv  ;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes ShowDiv{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100vh;
+    }
+}
+@keyframes HideDiv{
+    0%{
+        height: 100vh;
+    }
+    100%{
+        height: 0;
+    }
+}
+.HamburgerBtn{
+    display: none;
+}
+.DivNav{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+.MenuNav{
+    display: none;
+    position: absolute;
+}
+@media (max-width: 639px) {
+    .HideAllTime{
+        display: none;
+    }
+    .HamburgerBtn{
+        display: flex;
+        position:absolute;
+        top: 2.5vh;
+        right: 7vw;
+        Z-index: 999;
+    }
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    align-items: center;
+    position: relative;
+    top: 20vh;
+    list-style: none;
+
+}
+.links{
+  padding: 0;
+
+}
+.DivNav{
+    background-color: #e0e0e0;
+    height: 100vh;
+    top: 0;
+    z-index: 500;
+}
+.MenuNav{
+    display:  flex;
+    position: absolute;
+    top: -17vh;
+    font-size: 50px;
+    color: #b5b8ff;
+    letter-spacing: 6px;
+}
+}
+.liLinks:hover{
+    transform: scale(1.2);
+}
+
+@media (min-width: 640px) {
+    .nav{
+        display: flex;
+        gap: 50px;
+        list-style: none;
+
+    }
+    .MenuNav{
+        box-shadow:  0 1px 6px rgba(0,0,0,0.23);
+
+    }
+
+    .DivNav{
+        border: 1px solid #b5b8ff;
+
+        position: absolute;
+        transform: translate(-50%, 50%);
+        border-radius: 50px;
+        left: 50%;
+        width: 600px;
+    }
+    .links{
+    font-size: 22px;
+         }
+}

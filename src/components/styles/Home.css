@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 18vh;
+    transform: translate(-50%, 0);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    z-index: 0;
+    animation-fill-mode: none;
+    animation-name: zomein;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: 1;
+}
+@keyframes zomein {
+    0%{
+        transform:  translate(-50%, 0) scale(0);
+        filter: grayscale(70%);
+    }100%{
+    transform:  translate(-50%, 0) scale(1);
+             filter: grayscale(0%);
+         }
+}
+.img:hover{
+    transform:scale(1.2) translate(-40%, 0);
+
+}
+.Hi{
+    font-size: 47px;
+
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    padding-left: 3px;
+    margin-top: 200px;
+}
+
+.MyName{
+    color: #535bf2;
+    margin-left: 3px;
+}
+.Text{
+    width: 100%;
+    text-align: center;
+
+}
+.info{
+    font-size: 15px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.7;
+    line-height: 1.1;
+    max-width: 700px;
+    text-align: center;
+    display: block;
+}
+
+.container{
+    width: 600px;
+
+}
+
+.pages{
+    display: flex;
+    width: 300px;
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.pageSingle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2) ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+  
+
+}
+@media (min-height: 850px) {
+.img{
+    width: 250px;
+    height:250px
+}
+}
+@media (max-height: 728px) {
+    .pageSingle{
+        top: 30px;
+    }
+
+}
+.pageSingle:hover{
+    transform:scale(1.2) ;
+    transition: transform 0.2s;
+    cursor: pointer;
+    background-color: #ececec;
+}
+@media (max-width: 639px){
+    .img{
+        filter: grayscale(0%);
+
+    }
+}
