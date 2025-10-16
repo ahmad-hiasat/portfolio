@@ -6,7 +6,7 @@ import wrench from '../assets/wrench.svg';
 import web from '../assets/web.svg';
 import express from '../assets/express.svg'
 import mongo from '../assets/mongo.svg'
-import sql from '../assets/sql.svg'
+import sql from '../assets/SQL.svg'
 import react from '../assets/react.svg'
 import education from '../assets/education.svg'
 import node from '../assets/node.svg'
