@@ -5,7 +5,11 @@
     top: 36px;
     margin-left: -190px;
 }
-
+@media (max-width: 379px) {
+    .ElementImg  {
+      left: 50vw;
+    }
+}
 .theText{
     position: relative;
     margin-left: 10px;

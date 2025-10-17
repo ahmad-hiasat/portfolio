@@ -4,6 +4,9 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     align-items: center;
     min-height: 64vh;
     overflow: visible;
@@ -91,6 +94,9 @@
 }
 .WantTo{
     position: relative;
+    text-align: center;
+    font-family: "Figtree", sans-serif;
+
 }
 #fadein{
     animation-name: fadeinTitle;
